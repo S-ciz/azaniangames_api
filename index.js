@@ -5,6 +5,7 @@ const EditorRouter = require('./Routes/Editor.js');
 const SubscribeRouter = require('./Routes/Subscriber.js')
 const AuthRouter = require('./Routes/Auth.js');
 const FormRouter = require('./Routes/Form.js')
+const GalleryRouter = require('./Routes/Gallery.js');
 const compression = require("compression")
 
 require('colors')
@@ -20,7 +21,7 @@ app.use(EditorRouter);
 app.use(SubscribeRouter)
 app.use(AuthRouter);
 app.use(FormRouter);
-
+app.use(GalleryRouter);
 
 // authentication
 
